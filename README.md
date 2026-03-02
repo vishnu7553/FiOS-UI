@@ -54,22 +54,22 @@ This component is part of the FiOS ecosystem:
 │         └───────────────┬───────────────┘                   │
 │                         │                                   │
 │         ┌───────────────▼───────────────┐                   │
-│         │        HEADER CONTROLS         │                  │
-│         │ • Status Dot                   │                  │
-│         │ • Start/Stop Button            │                  │
-│         │ • Service Indicator            │                  │
+│         │        HEADER CONTROLS        │                   │
+│         │ • Status Dot                  │                   │
+│         │ • Start/Stop Button           │                   │
+│         │ • Service Indicator           │                   │
 │         └───────────────┬───────────────┘                   │
 │                         │                                   │
-│         ┌───────────────▼───────────────┐                   │
+│         ┌───────────────▼────────────────┐                  │
 │         │      SOCKET COMMUNICATION      │                  │
 │         │   /tmp/friday_orchestrator.sock│                  │
-│         └───────────────┬───────────────┘                   │
+│         └───────────────┬────────────────┘                  │
 └─────────────────────────┼───────────────────────────────────┘
                           │
                           ▼
               ┌─────────────────────┐
-              │ FRIDAY Orchestrator  │
-              │   (Go Service)       │
+              │ FRIDAY Orchestrator │
+              │   (Go Service)      │
               └─────────────────────┘
 ```
 
@@ -127,7 +127,7 @@ git clone https://github.com/vishnu7553/fios-ui
 cd fios-ui
 
 # Make the script executable
-chmod +x Friday.sh
+chmod +x Friday
 ```
 
 ---
@@ -137,7 +137,7 @@ chmod +x Friday.sh
 ### Launch the UI
 
 ```bash
-./Friday.sh
+./Friday
 ```
 
 ### Interface Guide
@@ -170,7 +170,7 @@ chmod +x Friday.sh
 
 ```
 fios-ui/
-├── Friday.sh          # Main application script
+├── Friday             # Main application script
 ├── style.css          # GTK CSS styling
 ├── README.md          # This documentation
 └── LICENSE            # MIT License
