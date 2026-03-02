@@ -54,22 +54,22 @@ This component is part of the FiOS ecosystem:
 │         └───────────────┬───────────────┘                   │
 │                         │                                   │
 │         ┌───────────────▼───────────────┐                   │
-│         │        HEADER CONTROLS         │                  │
-│         │ • Status Dot                   │                  │
-│         │ • Start/Stop Button            │                  │
-│         │ • Service Indicator            │                  │
+│         │        HEADER CONTROLS        │                   │
+│         │ • Status Dot                  │                   │
+│         │ • Start/Stop Button           │                   │
+│         │ • Service Indicator           │                   │
 │         └───────────────┬───────────────┘                   │
 │                         │                                   │
-│         ┌───────────────▼───────────────┐                   │
+│         ┌───────────────▼────────────────┐                  │
 │         │      SOCKET COMMUNICATION      │                  │
 │         │   /tmp/friday_orchestrator.sock│                  │
-│         └───────────────┬───────────────┘                   │
+│         └───────────────┬────────────────┘                  │
 └─────────────────────────┼───────────────────────────────────┘
                           │
                           ▼
               ┌─────────────────────┐
-              │ FRIDAY Orchestrator  │
-              │   (Go Service)       │
+              │ FRIDAY Orchestrator │
+              │   (Go Service)      │
               └─────────────────────┘
 ```
 
